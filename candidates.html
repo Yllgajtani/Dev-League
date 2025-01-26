@@ -1,0 +1,103 @@
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Candidates</title>
+<link rel="stylesheet" href="candidates.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+<div class="nav1">
+    <img class="logo" src="./go-vote-presidential-election-typography-poster-usa-patriotic-sign-vector-template-banner-sticker-flyer-etc_656810-3902.avif" alt="">
+</div>
+
+<div class="body">
+    <div class="bodyleft">
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./Lumnir Abdixhiku.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Lumnir Abdixhiku</p>
+                    <p class="premtimet">Përmirësimi i sistemit të arsimit dhe shëndetësisë</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Lumnir Abdixhiku')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./Bedri hamza.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Bedri Hamza</p>
+                    <p class="premtimet">Rritje e pagave në sektorin publik</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Bedri Hamza')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./Ramush_Haradinaj_(-125880784).jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Ramush Haradinaj</p>
+                    <p class="premtimet">Anëtarësimi në NATO</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Ramush Haradinaj')">Vote</button>
+        </div>
+    </div>
+
+    <div class="bodyright">
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./albin.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Albin Kurti</p>
+                    <p class="premtimet">Themelimi i Fondit Sovran dhe Bankës Zhvillimore</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Albin Kurti')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./eman.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Eman Rrahmani</p>
+                    <p class="premtimet">Angazhimi për të rinjtë</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Eman Rrahmani')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./memli.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Memli Krasniqi</p>
+                    <p class="premtimet">Rritjen e pages minimale +30%</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Memli Krasniqi')">Vote</button>
+        </div>
+    </div>
+</div>
+<script>
+
+    function showVoteAlert(candidateName) {
+        Swal.fire({
+            icon: 'success',
+            title: 'Thank You!',
+            text: `You have voted for ${candidateName}.`,
+            confirmButtonText: 'Close',
+            background: '#FFFFFF', 
+            color: '#000000', 
+            confirmButtonColor: '#2575fc', 
+        });
+    }
+</script>
+</body>
+
+</html>
