@@ -1,0 +1,103 @@
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Candidates</title>
+<link rel="stylesheet" href="PDK.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+<div class="nav1">
+    <img class="logo" src="./go-vote-presidential-election-typography-poster-usa-patriotic-sign-vector-template-banner-sticker-flyer-etc_656810-3902.avif" alt="">
+</div>
+
+<div class="body">
+    <div class="bodyleft">
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./Bedri hamza.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Bedri Hamza</p>
+                    <p class="premtimet">Kandidat per kryeministër</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Bedri Hamza')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./vlora.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Vlora Çitaku</p>
+                    <p class="premtimet">Kandidat per deputet</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Vlora Çitaku')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./enver.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Enver Hoxhaj</p>
+                    <p class="premtimet">Kandidat per deputet</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Enver Hoxhaj')">Vote</button>
+        </div>
+    </div>
+
+    <div class="bodyright">
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./uran.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Uran Ismaili</p>
+                    <p class="premtimet">Kandidat per deputet</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Uran Ismaili')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./eliza.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Eliza Hoxha</p>
+                    <p class="premtimet">Kandidat per deputet</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Eliza Hoxha')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./memli.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Memli Krasniqi</p>
+                    <p class="premtimet">Kandidat per deputet</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Memli Krasniqi')">Vote</button>
+        </div>
+    </div>
+</div>
+<script>
+
+    function showVoteAlert(candidateName) {
+        Swal.fire({
+            icon: 'success',
+            title: 'Thank You!',
+            text: `You have voted for ${candidateName}.`,
+            confirmButtonText: 'Close',
+            background: '#FFFFFF', 
+            color: '#000000', 
+            confirmButtonColor: '#2575fc', 
+        });
+    }
+</script>
+</body>
+
+</html>

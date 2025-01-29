@@ -1,0 +1,103 @@
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Candidates</title>
+<link rel="stylesheet" href="LDK.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+<div class="nav1">
+    <img class="logo" src="./go-vote-presidential-election-typography-poster-usa-patriotic-sign-vector-template-banner-sticker-flyer-etc_656810-3902.avif" alt="">
+</div>
+
+<div class="body">
+    <div class="bodyleft">
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./Lumnir Abdixhiku.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Lumnir Abdixhiku</p>
+                    <p class="premtimet">Kandidat per kryeministër</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Lumnir Abdixhiku')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./kujtim.jpeg" alt="">
+                <div class="info">
+                    <p class="_titulli">Kujtim Shala</p>
+                    <p class="premtimet">Kandidat per deputet</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Kujtim Shala')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./dorasa.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Doarsa Kica Xhelili</p>
+                    <p class="premtimet">Kandidat per deputet</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Doarsa Kica Xhelili')">Vote</button>
+        </div>
+    </div>
+
+    <div class="bodyright">
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./lutfi.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Lutfi Haziri</p>
+                    <p class="premtimet">Kandidat per deputet</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Lutfi Haziri')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./gazmend.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Gazmend Muhaxheri</p>
+                    <p class="premtimet">Kandidat per deputet</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Gazmend Muhaxheri')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./Hykmete_Bajrami.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Hykmete Bajrami</p>
+                    <p class="premtimet">Kandidat per deputet</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Hykmete Bajrami')">Vote</button>
+        </div>
+    </div>
+</div>
+<script>
+
+    function showVoteAlert(candidateName) {
+        Swal.fire({
+            icon: 'success',
+            title: 'Thank You!',
+            text: `You have voted for ${candidateName}.`,
+            confirmButtonText: 'Close',
+            background: '#FFFFFF', 
+            color: '#000000', 
+            confirmButtonColor: '#2575fc', 
+        });
+    }
+</script>
+</body>
+
+</html>

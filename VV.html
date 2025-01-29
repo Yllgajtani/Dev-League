@@ -1,0 +1,103 @@
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Candidates</title>
+<link rel="stylesheet" href="VV.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+<div class="nav1">
+    <img class="logo" src="./go-vote-presidential-election-typography-poster-usa-patriotic-sign-vector-template-banner-sticker-flyer-etc_656810-3902.avif" alt="">
+</div>
+
+<div class="body">
+    <div class="bodyleft">
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./albin.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Albin Kurti</p>
+                    <p class="premtimet">Kandidat per kryeministër</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Albin Kurt')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./images.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Glauk Konjufca</p>
+                    <p class="premtimet">Kandidat per deputet</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Glauk Konjufca')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./donikaa.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Donika Gërvalla</p>
+                    <p class="premtimet">Kandidat per depute</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Donika Gërvalla')">Vote</button>
+        </div>
+    </div>
+
+    <div class="bodyright">
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./13_Ms._Arberie_Nagavci.png" alt="">
+                <div class="info">
+                    <p class="_titulli">Arbërie Nagavci</p>
+                    <p class="premtimet">Kandidat per depute</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Arbërie Nagavci')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./Hekuran_Murati_-_portret,_Kuvendi_i_Kosovës.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Hekuran Murati</p>
+                    <p class="premtimet">Kandidat per depute</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Hekuran Murati')">Vote</button>
+        </div>
+
+        <div class="box">
+            <div class="combo">
+                <img class="icon" src="./mimoza.jpg" alt="">
+                <div class="info">
+                    <p class="_titulli">Mimoza Kusari-Lilai</p>
+                    <p class="premtimet">Kandidat per depute</p>
+                </div>
+            </div>
+            <button class="vote" onclick="showVoteAlert('Mimoza Kusari-Lila')">Vote</button>
+        </div>
+    </div>
+</div>
+<script>
+
+    function showVoteAlert(candidateName) {
+        Swal.fire({
+            icon: 'success',
+            title: 'Thank You!',
+            text: `You have voted for ${candidateName}.`,
+            confirmButtonText: 'Close',
+            background: '#FFFFFF', 
+            color: '#000000', 
+            confirmButtonColor: '#2575fc', 
+        });
+    }
+</script>
+</body>
+
+</html>
